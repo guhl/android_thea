@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="CyanogenMod/android_device_motorola_thea" path="device/motorola/thea" revision="0f9895d4f1fd0af291e8cd9233fd19b4d743f246" upstream="refs/heads/cm-12.1"/>
+  <project name="CyanogenMod/android_device_motorola_msm8226-common" path="device/motorola/msm8226-common" revision="dd01430c09742221908cfb4ee6bf5d41f356c923" upstream="refs/heads/cm-12.1"/>
+  <project name="CyanogenMod/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" revision="32473a7d5de34716ac6e4a0c6c69ce2c6c058b3a" upstream="refs/heads/cm-12.1"/>
+  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" revision="4697ca47ef10e8cd770b5adc1f6619ddb7798087" upstream="refs/heads/cm-12.1"/>
+  <project name="CyanogenMod/android_hardware_qcom_fm" path="hardware/qcom/fm" revision="dfd1a96ad223be7c5a7f6c95a2fad5a46f6f16de" upstream="refs/heads/cm-12.1"/>
+  <project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" revision="cm-12.1" remote="github" />
+
+  <remove-project path="hybris/hybris-boot" name="mer-hybris/hybris-boot"/>
+  <project path="hybris/hybris-boot" name="guhl/hybris-boot" revision="master"/>
+  <remove-project name="CyanogenMod/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226"/>
+  <project name="guhl/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" revision="32473a7d5de34716ac6e4a0c6c69ce2c6c058b3a" upstream="refs/heads/cm-12.1"/>
+  <remove-project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
+  <project name="guhl/droidmedia" path="external/droidmedia" revision="master" />
+  <remove-project name="CyanogenMod/android_device_motorola_thea" path="device/motorola/thea" />
+  <project name="guhl/android_device_motorola_thea" path="device/motorola/thea" revision="hybris-12.1" />
+
+  <project path="rpm/" name="guhl/droid-hal-thea" revision="master" />
+  <project path="hybris/droid-configs" name="guhl/droid-config-thea" revision="master" />
+  <project path="hybris/droid-hal-version-thea" name="guhl/droid-hal-version-thea" revision="master" />
+</manifest>
